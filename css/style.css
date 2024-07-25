@@ -141,7 +141,22 @@
     vertical-align: middle;
     margin-left: 8px;
 }
-
+.logo-saarch{
+    width: 450px;
+}
+.logo-saarch input{
+    border-radius: 12px 0px 0px 12px;
+}
+.phone-text{
+    color: #00ed80;
+}
+.phone-text:hover{
+    color: #000;
+}
+.logo-saarch input:focus{
+    box-shadow: none !important;
+    border-color: #198754!important;
+}
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;

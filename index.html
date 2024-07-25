@@ -42,18 +42,25 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid py-2 d-none d-lg-flex bg-primary">
-        <div class="container">
-            <div class="d-flex justify-content-between">
+    <div class="container-fluid d-none d-lg-flex bg-primary">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center px-3">
                 <div>
                     <small class="me-3 text-white"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
                     <small class="me-3 text-white"><i class="fa fa-clock me-2"></i>Mon-Sat 09am-5pm, Sun Closed</small>
                 </div>
-                <nav class="breadcrumb mb-0">
-                    <a class="breadcrumb-item small" href="#">Wishlist</a>
-                    <a class="breadcrumb-item small" href="#">Compare List</a>
-                    <a class="breadcrumb-item small" href="#">Login</a>
-                    <a class="breadcrumb-item small" href="#">My Cart</a>
+                <nav class="navbar navbar-expand-lg navbar-light bg-primary py-lg-0 px-lg-3 mb-0">
+                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a href="index.html" class="nav-item nav-link fs-6 me-3 pe-2"><i class="fa fa-heart pe-2"></i>Wishlist</a>
+                            <a href="about.html" class="nav-item nav-link fs-6 me-3 pe-2"><i class="fa fa-exchange-alt pe-2"></i>Compare List</a>
+                            <a href="service.html" class="nav-item nav-link fs-6 me-3 pe-2"><i class="fa fa-sign-in-alt pe-2"></i>Login</a>
+                            <a href="index.html" class="nav-item nav-link fs-6 me-0 pe-0"><i class="fa fa-shopping-cart pe-2"></i>My Cart</a>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -65,21 +72,12 @@
     <div class="container-fluid bg-white text-white pt-4 pb-5 d-none d-lg-flex">
         <div class="container pb-2">
             <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex text-dark">
-                    <i class="bi bi-telephone-inbound fs-2 fw-bold"></i>
-                    <div class="ms-3">
-                        <h5 class="text-dark mb-0 fw-bolder">call Now</h5>
-                        <span>+012 345 6789</span>
-                    </div>
-                </div>
                 <a href="index.html">
                     <img src="img/logo.png" class="m-0" style="width: 100%; height:100px;">
                 </a>
-                <div class="d-flex text-dark">
-                    <i class="bi bi-envelope fs-2 fw-bold"></i>
-                    <div class="ms-3">
-                        <h5 class="text-dark mb-0 fw-bold">Mail Now</h5>
-                        <span>info@example.com</span>
+                <div class="logo-saarch">
+                    <div class="input-group">
+                        <input type="text" class="form-control border border-primary py-3 px-3 text-dark " placeholder="Search here..."><button class="btn btn-primary px-4" style="border-radius: 0px 12px 12px 0px;"><i class="fa fa-search"></i></button>
                     </div>
                 </div>
             </div>
@@ -101,7 +99,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link active">All Products</a>
+                        <a href="index.html" class="nav-item nav-link">All Products</a>
                         <a href="about.html" class="nav-item nav-link">Our Brands</a>
                         <a href="service.html" class="nav-item nav-link">Promotions</a>
                         <div class="nav-item dropdown">
@@ -117,10 +115,13 @@
                         <a href="contact.html" class="nav-item nav-link">Sustainability</a>
                     </div>
                     <div class="ms-auto d-none d-lg-flex">
-                        <a class="btn btn-sm-square btn-primary ms-2" href="javascript:void();"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-sm-square btn-primary ms-2" href="javascript:void();"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-sm-square btn-primary ms-2" href="javascript:void();"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-sm-square btn-primary ms-2" href="javascript:void();"><i class="fab fa-youtube"></i></a>
+                        <div class="d-flex">
+                            <i class="bi bi-telephone-inbound fs-2 fw-bold text-white"></i>
+                            <div class="ms-3">
+                                <h5 class="mb-0 fw-bolder text-white">call Now</h5>
+                                <a href="javascript:void();"><span class="phone-text">+012 345 6789</span></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
