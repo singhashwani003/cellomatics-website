@@ -537,15 +537,15 @@ small, .small {
     background-size: cover;
 }
 
-.testimonial-item img {
+/* .testimonial-item img {
     width: 60px !important;
     height: 60px !important;
     border-radius: 60px;
-}
+} */
 
 .testimonial-carousel .owl-nav {
     position: absolute;
-    top: 0;
+    top: -50px;
     right: 0;
     display: flex;
 }
