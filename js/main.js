@@ -19,7 +19,7 @@
     // Sticky Navbar
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
-            $('.sticky-top').addClass('bg-primary shadow-sm').css('top', '-1px');
+            $('.sticky-top').addClass('bg-none shadow-none').css('top', '-1px');
         } else {
             $('.sticky-top').removeClass('bg-white shadow-sm').css('top', '-100px');
         }
